@@ -14,7 +14,7 @@ usage() {
          also use localhost ip "http://127.0.0.1:3000".
     -u : User email address (registered account) for login CodiMD.
     -c : Container id or name.
-    -m : markdown file.
+    -m : markdown file. Space is not allowed in the file path.
     -h : Show usage help
 EOF
     exit 1
