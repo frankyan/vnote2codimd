@@ -22,7 +22,10 @@ Follow instructions in https://github.com/hackmdio/codimd-container.
 
 Modify the `docker-compose.yml` file to set environmental variables. Such as `CMD_DOMAIN`, `CMD_PORT` and
 `CMD_URL_ADDPORT`. For importing image files, you must set `CMD_IMAGE_UPLOAD_TYPE=filesystem` and don't change the
-default directory (`./public/uploads`). Then start the container:
+default directory (`./public/uploads`).
+
+
+Then start the container:
 
 ``` Bash
 docker-compose up
@@ -38,9 +41,14 @@ For server security, it only can be ran on the server. Don't try to access docke
 Usage example:
 
 ``` Bash
-
+bash importVNote.sh -s http://127.0.0.1:3000 -u my@email.com -c codimdcontainer_app_1 -m ./exploratory_analysis.md
 ```
 
 Parameters:
 
-- 
+- `-s` : CodiMD server URL. Such as "http://www.example.org:3000". As we ran the script on the host server, so we can
+         also use localhost ip "http://127.0.0.1:3000".
+- `-u` : User email address (registered account) for login CodiMD.
+- `-c` : Container id or name.
+- `-m` : markdown file.
+- `-h` : Show usage help

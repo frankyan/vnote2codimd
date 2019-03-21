@@ -10,7 +10,8 @@ usage() {
     This script can import a VNote note to self-hosted CodiMD server. It's better to use the VNote exported Markdown
     file folder.
 
-    -s : CodiMD server URL. Such as "http://www.example.org:3000".
+    -s : CodiMD server URL. Such as "http://www.example.org:3000". As we ran the script on the host server, so we can
+         also use localhost ip "http://127.0.0.1:3000".
     -u : User email address (registered account) for login CodiMD.
     -c : Container id or name.
     -m : markdown file.
